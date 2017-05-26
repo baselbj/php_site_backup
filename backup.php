@@ -56,7 +56,7 @@ if ( ! is_dir($BackupPath) ) {
 $day= date("D");
 // Make Day folder if not exists
 if ( ! is_dir($BackupPath."$day/") ) {
-    mkdir($BackupPath , 0777, true); //create folder
+    mkdir($BackupPath."$day/" , 0777, true); //create folder
 }
 
 // change backup folder to day
